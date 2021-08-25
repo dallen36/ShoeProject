@@ -1,0 +1,165 @@
+/* base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #eee;
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  padding: 1rem 2.5rem;
+  border-radius: 10rem;
+}
+
+.btn--white {
+  background-color: #fff;
+  color: black;
+}
+
+.btn--black {
+  background-color: black;
+  color: #fff;
+}
+
+.spacer-text {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Header Navbar */
+
+.header {
+  margin: 3rem 0;
+}
+
+.header__nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 6rem;
+  z-index: 100;
+}
+
+.header__nav-bar > img {
+  height: 5rem;
+  margin-left: 5rem;
+}
+
+.header .navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar__item {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 0.06rem;
+  font-size: 1.4rem;
+}
+
+.header .navbar * > li:not(:last-child) {
+  padding: 0 2rem 0 0;
+}
+
+.search-bar {
+  display: flex;
+  background-color: #f5f5f5;
+  border-radius: 100px;
+  margin-right: 2rem;
+  height: 70%;
+}
+
+.search-bar > i {
+  align-self: center;
+  padding-left: 1rem;
+  font-size: 2rem;
+}
+
+.search-bar__input {
+  align-self: center;
+  padding: 0 1rem;
+  height: 60%;
+  background-color: #f5f5f5;
+  width: 80%;
+  border: none;
+  outline: none;
+}
+
+/* holder */
+
+.main {
+  background-color: #fff;
+  border-top: 1px solid rgb(223, 223, 223);
+}
+
+.section-holder {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.primary-heading {
+  position: absolute;
+  left: 4rem;
+  bottom: 4rem;
+}
+
+.primary-heading--main {
+  display: block;
+  width: 40rem;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.primary-heading--sub {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.section-holder__block {
+  position: relative;
+  height: 60rem;
+  margin-bottom: 9rem;
+}
+
+.section-holder__block--1 {
+  background-image: linear-gradient(
+      to right top,
+      rgba(126, 126, 126, 0.918) 40%,
+      transparent 40%
+    ),
+    url(/images/shoePage.jpeg);
+}
+
+.section-holder__block--2 {
+  background-image: linear-gradient(
+      to top right,
+      rgba(92, 92, 92, 0.918) 40%,
+      transparent 40%
+    ),
+    url(/images/shoePage2.jpeg);
+}
