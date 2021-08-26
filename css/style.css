@@ -464,6 +464,10 @@ body {
   .main {
     width: 70%;
   }
+
+  .search-bar {
+    width: 15%;
+  }
 }
 
 @media (max-width: 1200px) {
