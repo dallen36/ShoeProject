@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -15,6 +17,7 @@ body {
   box-sizing: border-box;
   background-color: #eee;
   font-family: "Open Sans", sans-serif;
+  color: #999;
 }
 
 .btn {
@@ -70,6 +73,7 @@ body {
 
 .spacer-text {
   font-size: 2rem;
+  color: black;
   margin-bottom: 2rem;
 }
 
@@ -95,6 +99,7 @@ body {
 
 .header .navbar {
   width: 50rem;
+  margin-left: 10rem;
 }
 
 .header .navbar ul {
@@ -209,4 +214,146 @@ body {
       transparent 40%
     ),
     url(/images/shoePage2.jpeg);
+}
+/* Grid section */
+
+.section-grid {
+  width: 90vw;
+  height: 70rem;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.section-grid__left {
+  background-image: url(/images/left.jpeg);
+  background-size: fill;
+  background-position: center;
+  grid-row: 1 / span 2;
+  position: relative;
+}
+
+.secondary-heading {
+  position: absolute;
+  left: 4rem;
+  bottom: 4rem;
+}
+
+.secondary-heading--main {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0rem 0rem 0.5rem black;
+  font-weight: 700;
+  letter-spacing: 0.07rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.section-grid__top {
+  background-image: url(/images/backpack.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.section-grid__bottom {
+  background-image: url(/images/bottom2.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Footer */
+
+.footer {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
+  height: 40rem;
+  margin-bottom: 2rem;
+}
+
+.footer__list {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.footer__list *:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.footer__list * > li {
+  margin-bottom: 1.5rem;
+}
+
+.footer__list--main {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__list--main * > a {
+  color: #fff;
+}
+
+.footer__list--sub * {
+  color: #999;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.footer__list--bold {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5rem;
+  margin-top: 5rem;
+}
+
+.footer__social * {
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
+.footer__copyright {
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 5rem 2rem 5rem;
+  border-top: solid 1px #777;
+}
+
+.left__left {
+  color: #fff;
+  margin-right: 2rem;
+}
+
+.left__left > i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.footer__copyright--right {
+  width: 45rem;
+}
+
+.footer__copyright--right > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright--right * {
+  color: #999;
 }
