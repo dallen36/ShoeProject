@@ -26,6 +26,7 @@ body {
   font-size: 1.3rem;
   padding: 1rem 2.5rem;
   border-radius: 10rem;
+  box-shadow: 0rem 0.1rem 0.4rem -0.3rem black;
 }
 
 .btn::after,
@@ -43,8 +44,7 @@ body {
 }
 
 .btn:hover {
-  transform: translateY(5rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: scaleX(1) translateY(1rem);
 }
 
 .btn:hover::after {
@@ -246,7 +246,7 @@ body {
 .secondary-heading--main {
   text-align: center;
   color: #fff;
-  text-shadow: 0rem 0rem 0.5rem black;
+  text-shadow: 0rem 0.1rem 0.2rem black;
   font-weight: 700;
   letter-spacing: 0.07rem;
   font-size: 1.5rem;
