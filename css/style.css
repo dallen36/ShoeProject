@@ -167,7 +167,6 @@ body {
 }
 
 .section-holder {
-  width: 90vw;
   margin: 0 auto;
 }
 
@@ -221,7 +220,6 @@ body {
 /* Grid section */
 
 .section-grid {
-  width: 90vw;
   height: 70rem;
   margin: 0 auto;
   padding-bottom: 5rem;
@@ -455,4 +453,91 @@ body {
 
 .footer__copyright--right *:hover {
   color: #fff;
+}
+
+/* media */
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 80%;
+  }
+  .main {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+  .main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 40%;
+  }
+  .main {
+    width: 90%;
+  }
+
+  .section-holder__block--1 {
+    background-image: linear-gradient(
+        to right top,
+        rgba(126, 126, 126, 0.918) 40%,
+        transparent 40%
+      ),
+      url(/images/shoePage.jpeg);
+    background-size: 150rem;
+  }
+
+  .section-holder__block--2 {
+    background-image: linear-gradient(
+        to top right,
+        rgba(92, 92, 92, 0.918) 40%,
+        transparent 40%
+      ),
+      url(/images/shoePage2.jpeg);
+    background-size: 150rem;
+  }
+
+  .section-grid__left {
+    background-image: url(/images/left.jpeg);
+    background-size: 120rem;
+    background-position: center;
+    grid-row: 1 / span 2;
+    position: relative;
+  }
+
+  .search-bar__input {
+    font-size: 1.5rem;
+  }
+
+  .footer__list *:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  .footer__copyright--right {
+    width: 50rem;
+  }
+
+  .footer__copyright--right *,
+  .footer__copyright--left {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 35%;
+  }
+  .main {
+    width: 90%;
+  }
+
+  .search-bar {
+    width: 20%;
+  }
 }
