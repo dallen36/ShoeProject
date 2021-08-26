@@ -305,6 +305,11 @@ body {
   color: #999;
   font-weight: 600;
   font-size: 1.1rem;
+  transition: all 0.2s;
+}
+
+.footer__list--sub *:hover {
+  color: #fff;
 }
 
 .footer__list--bold {
@@ -324,6 +329,12 @@ body {
 .footer__social * {
   font-size: 3rem;
   margin-left: 2rem;
+  transition: all 0.2s;
+}
+
+.footer__social *:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 .footer__copyright {
@@ -356,4 +367,9 @@ body {
 
 .footer__copyright--right * {
   color: #999;
+  transition: all 0.2s;
+}
+
+.footer__copyright--right *:hover {
+  color: #fff;
 }
